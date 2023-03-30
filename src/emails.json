@@ -1,0 +1,5 @@
+{
+  "path_prefix": "./Content Emails/",
+  "Training": ["sample_email.html"],
+  "Testing": ["sample_email.html"]
+}

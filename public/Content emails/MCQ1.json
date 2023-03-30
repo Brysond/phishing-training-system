@@ -1,0 +1,40 @@
+{
+  "survey": true,
+  "title": "Phishing Quiz",
+  "description": "This is a quiz to test your knowledge of phishing emails.",
+  "completedHtml": "<h3>Thank you for completing this quiz.</h3><div style=\"margin: 40px 0; width:100%\"><button style=\"margin: auto\" class=\"v2-class---button v2-class---button--primary v2-class---button--large\" onclick=\"reRunSurvey();\"><span class=\"v2-class---button__text v2-class---button__text--secondary v2-class---button__text--large\">Run survey again</span></button></div>",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "question1",
+          "title": "Question",
+          "correctAnswer": "D",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "A",
+              "text": "Option A"
+            },
+            {
+              "value": "B",
+              "text": "Option B"
+            },
+            {
+              "value": "C",
+              "text": "Option C"
+            },
+            {
+              "value": "D",
+              "text": "Option D"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "showCompletedPage": false,
+  "showQuestionNumbers": "on"
+}

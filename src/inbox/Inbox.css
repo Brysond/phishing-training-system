@@ -1,0 +1,355 @@
+/* Inbox css */
+
+* {
+  transition: background-color 0.175s;
+  border-width: inherit;
+}
+
+#marking-buttons *:not(#marking-buttons * *) {
+  border: 2px solid rgb(165, 165, 165);
+  border-top: 0;
+  border-left: 0;
+}
+
+#marking-buttons *:hover:not(#marking-buttons * *) {
+  cursor: pointer;
+}
+
+#marking-buttons *:active:not(#marking-buttons * *) {
+  border: 2px solid rgb(165, 165, 165);
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.inbox * {
+  border-radius: 5px;
+}
+
+.client-list *:hover:not(.client-list * *) {
+  outline: 2px solid rgb(165, 165, 165);
+  cursor: pointer;
+}
+
+.HIDDEN * {
+  visibility: hidden;
+}
+
+.inbox {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  min-height: 0;
+}
+
+#box-0 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}
+
+/* Marking css */
+
+#marking-buttons {
+  margin: 0.5em;
+  margin-left: 0.25em;
+  margin-bottom: 0;
+  border: 0;
+  padding: 0.25em;
+  border-radius: 0.5em;
+  flex: 0 0 auto;
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: left;
+}
+
+#marking-genuine {
+  box-sizing: content-box;
+  margin: 0;
+  margin-right: 1em;
+  border: 0;
+  padding: 0;
+  border-radius: 0.5em;
+  height: 2em;
+  width: 11em;
+  font-size: 1em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#marking-genuine-img {
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+#marking-phishing {
+  box-sizing: content-box;
+  margin: 0;
+  margin-right: 1em;
+  border: 0;
+  padding: 0;
+  border-radius: 0.5em;
+  height: 2em;
+  width: 11em;
+  font-size: 1em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#marking-phishing-img {
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+/* remove once marking buttons are working */
+.temp-inbox-button {
+  box-sizing: content-box;
+  margin: 0;
+  margin-right: 1em;
+  border: 0;
+  padding: 0;
+  border-radius: 0.5em;
+  height: 2em;
+  width: 3em;
+  font-size: 1em;
+  background-color: white;
+}
+
+/* Sidebar css */
+
+.client-list {
+  margin: 0.5em;
+  margin-right: 0.25em;
+  padding: 0.25em;
+  width: 20vw;
+  flex: 0 0 auto;
+  border-radius: 0.5em;
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.sidebar-email {
+  margin-bottom: 0.25em;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+}
+
+.sidebar-active-indicator {
+  background-color: #335fb6;
+  width: 0.5em;
+  border-radius: 0%;
+  opacity: 0;
+}
+
+.sidebar-pfp-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  padding-top: 0.5em;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  color: white;
+  font-weight: 500;
+  padding: 0.2em;
+}
+
+.sidebar-email-info {
+  margin: 0.25em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.sidebar-email-sender {
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-email-subject {
+  display: inline-block;
+  font-size: 1em;
+  color: #3366cc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-email-message {
+  display: inline-block;
+  font-size: 1em;
+  color: #a0a0a0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Survey CSS */
+#survey {
+  overflow-y: scroll;
+  background-color: #f3f3f3;
+  --primary: #3366cc;
+  --background: #ffffff;
+  --background-dim: #f3f3f3;
+  --background-dim-light: #f9f9f9;
+  --primary-foreground: #ffffff;
+  --foreground: #161616;
+  --base-unit: 8px;
+}
+.sd-selectbase__label {
+  padding: 0 5px;
+}
+
+/* EmailView css */
+
+.emailDiv {
+  margin: 0.5em;
+  margin-left: 0.25em;
+  border: 0;
+  padding: 0.25em;
+  flex: 1 1 auto;
+  border-radius: 0.5em;
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.email-subject {
+  margin: 0;
+  margin-bottom: 0.25em;
+  border: 0;
+  padding: 0.25em;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 0.25em;
+  white-space: nowrap;
+  background-color: white;
+  user-select: none;
+}
+
+#box-1 {
+  flex: 1 1 auto;
+  border-radius: 0.25em;
+  background-color: white;
+  display: flex;
+  min-height: 0;
+  overflow-y: scroll;
+}
+
+#email-pfp {
+  box-sizing: content-box;
+  margin: 0.25em 0 0 0.25em;
+  padding: 0.25em;
+  padding-top: 0.5em;
+  height: 3.25em;
+  border-radius: 50%;
+}
+
+#box-2 {
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+  flex: 1 1 auto;
+  border-radius: 0.25em;
+  background-color: white;
+}
+
+#box-2 * {
+  user-select: none;
+  width: fit-content;
+}
+
+#box-2 *:hover:not(#box-2 * *, .unselectable),
+.email-subject:hover:not(.unselectable) {
+  background-color: #f4e85f;
+  cursor: pointer;
+}
+
+.email-sender {
+  margin: 0;
+  margin-top: 0.25em;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #3366cc;
+}
+
+.email-recipient {
+  margin: 0;
+  margin-top: 0.25em;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  color: #a0a0a0;
+}
+
+#email-caution {
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+  display: inline-block;
+}
+
+.email-caution-text {
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+  font-size: 1em;
+  background-color: #f4e85f;
+}
+
+.email-caution-em {
+  font-style: normal;
+  font-weight: bold;
+  color: #cc0000;
+}
+
+.email-hyperlink-em {
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #3366cc;
+}
+
+.email-image {
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: 0.25em;
+}
