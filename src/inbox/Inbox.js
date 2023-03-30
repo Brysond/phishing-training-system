@@ -11,6 +11,13 @@ const getFile = async (fileName) => {
 };
 
 const finishMode = (nextMode) => {
+  let totalCorrect = 0;
+
+  //calc total correct data-points in localstorage
+  for (let key in localStorage) if (!isNaN(key)) 
+  if (JSON.parse(localStorage.getItem(key))[3] === 
+  JSON.parse(localStorage.getItem(key))[4]) totalCorrect++;
+    
   return (
     <>
       <p>
@@ -18,6 +25,12 @@ const finishMode = (nextMode) => {
           ? `Please return to the home screen and start ${nextMode}`
           : "You have completed our training system. Please let one of the trainers know."}
       </p>
+      <p><strong>
+        { nextMode === undefined ? 
+        `You scored ${totalCorrect} / ${localStorage.getItem("key")}`
+        :
+        null}
+    </strong></p>
       <form>
         <button id="pop-up-button" formaction="/">
           Home
